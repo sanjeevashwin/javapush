@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>StyleBarber - Bootstrap 4 Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="barber_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="cube-wrapper">
+      <div class="cube-folding">
+      <span class="leaf1"></span>
+      <span class="leaf2"></span>
+      <span class="leaf3"></span>
+      <span class="leaf4"></span>
+      </div>
+      <div class="mus">
+      <img src="{% static 'images/lode-img.png' %}" alt="" />
+      </div>
+      <span class="loading" data-name="Loading">SMBarber Loading</span>
+    </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+  <div class="top-add alert alert-light alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+    <!-- Start header -->
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="{% static 'images/logo.png' %}" alt="" />
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars-rs-food">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="/adminhome">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="/postoffer">Post Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="/postaccessories">Post Accessories</a></li>
+            <li class="nav-item"><a class="nav-link" href="/vieworder">View Appoinments</a></li>
+            <li class="nav-item"><a class="nav-link" href="/adcustomerfeed">Customer Feedback</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+</header>
+
+  <!-- End header -->
+
+
+
+
+
+<form method="POST" enctype="multipart/form-data" action="/storepostaccessories">
+
+{%csrf_token%}
+
+<!--CREATE TABLE view (name varchar(20),brand varchar(20),style varchar(20),liquid varchar(50),photo varchar(300),warranty varchar(50))-->
+<div>
+	<table align="center">
+
+Name <input type="text" id="name" name="name" placeholder=" Product Name"><br>
+Brand<input type="text" name="brand" placeholder="Brand Name"><br>
+Style <input type="text" name="style" placeholder="Which Style"><br>
+liquid volume<input type="text" name="liquid" placeholder="Liquied Type"><br>
+Photo<input type="file" name="pic" placeholder="pickup image"><br>
+
+
+<input type="Submit" name="Add" class="btn btn-danger">
+<h1>{{message}}</h1>
+</table>
+</div>
+
+
+
+
+
+
+
+ 	<div class="copyrights">
+      <div class="container">
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-links">
+              <a href="#">Home</a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
+              <a href="#">About</a>
+              <a href="#">Faq</a>
+              <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">StyleBarber</a> Design By : <a href="https://html.design/">html design</a></p>
+          </div>
+        </div>
+      </div><!-- end container -->
+    </div><!-- end copyrights -->
+  </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static '/js/all.js' %}"></script>
+  <script src="{% static '/js/responsive-tabs.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static '/js/custom.js' %}"></script>
+
+    <!--link rel="stylesheet" href="{% static '/css/animate.css' %}"-->
+</body>
+</html>

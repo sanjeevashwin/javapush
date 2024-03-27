@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>StyleBarber - Bootstrap 4 Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="barber_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="cube-wrapper">
+      <div class="cube-folding">
+      <span class="leaf1"></span>
+      <span class="leaf2"></span>
+      <span class="leaf3"></span>
+      <span class="leaf4"></span>
+      </div>
+      <div class="mus">
+      <img src="{% static 'images/lode-img.png' %}" alt="" />
+      </div>
+      <span class="loading" data-name="Loading">SMBarber Loading</span>
+    </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+  <div class="top-add alert alert-light alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+    <!-- Start header -->
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="{% static 'images/logo.png' %}" alt="" />
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars-rs-food">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/services">OurServices</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ouroffers">OurOffers</a></li>
+            <li class="nav-item"><a class="nav-link" href="/barbers">OurBarbers</a></li>
+            <li class="nav-item"><a class="nav-link" href="/vieworder">Accessories</a></li>
+            <li class="nav-item"><a class="nav-link" href="/appointment">Appointment</a></li>
+            <li class="nav-item"><a class="nav-link" href="/customerfeed">Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">AboutUs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+
+
+
+    <div id="pricing" class="section lb">
+        <div class="container">
+          <div class="section-title row text-center">
+            <div class="col-md-8 offset-md-2">
+            <small>OUR BABRER PRICING</small>
+            <h3>Our Offers</h3>
+            </div>
+          </div><!-- end title -->
+          <div class="row flex-items-xs-middle flex-items-xs-center">
+
+            <!-- Table #1  -->
+            <div class="col-xs-12 col-lg-4">
+              <div class="card text-center">
+              <div class="card-block">
+                <h4 class="card-title pricing-ti"> 
+                Shaving
+                </h4>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 5</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 10</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 15</a>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- Table #1  -->
+            <div class="col-xs-12 col-lg-4">
+              <div class="card text-center">
+              <div class="card-block">
+                <h4 class="card-title pricing-ti"> 
+                Face Masking
+                </h4>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 5</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 10</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 15</a>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- Table #1  -->
+            <div class="col-xs-12 col-lg-4">
+              <div class="card text-center">
+              <div class="card-block">
+                <h4 class="card-title pricing-ti"> 
+                Hair Styling
+                </h4>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 5</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 10</a>
+                </div>
+                <div class="line-pricing">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
+                <a href="#">$ 15</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    <div class="copyrights">
+      <div class="container">
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-links">
+              <a href="#">Home</a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
+              <a href="#">About</a>
+              <a href="#">Faq</a>
+              <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">StyleBarber</a> Design By : <a href="https://html.design/">html design</a></p>
+          </div>
+        </div>
+      </div><!-- end container -->
+    </div><!-- end copyrights -->
+  </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static '/js/all.js' %}"></script>
+  <script src="{% static '/js/responsive-tabs.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static '/js/custom.js' %}"></script>
+
+    <!--link rel="stylesheet" href="{% static '/css/animate.css' %}"-->
+</body>
+</html>

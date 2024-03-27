@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view booking</title>
+</head>
+<body>
+
+<table border="2">
+	<tr>
+		
+		
+		<th><u>Name</u></th>
+		<th><u>Place</u></th>
+		<th><u>Email</u></th>>
+		<th><u>Phone</u></th>>
+		
+		
+		
+	</tr>
+{% for res in result %}
+	<tr>
+		
+		
+		<td>{{res.name}}</td>
+		<td>{{res.place}}</td>
+		<td>{{res.email}}</td>
+		<td>{{res.phone}}</td>
+		<td><img src="{{res.photo.url}}" height="100" width="100"></td>
+		
+	</tr>
+
+{% endfor %}
+ 
+ </table>
+</body>
+</html>
+
+
+</table>
+
+
+
+</body>
+</html>

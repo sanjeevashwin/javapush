@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>view order</title>
+</head>
+<body>
+
+<table border="2">
+  <tr>
+    
+    
+    <th>Name</th>
+    <th><u>Brand</u></th>
+    <th><u>Style</u></th>>
+    <th><u>liquid</u></th>>
+    <th><u>Photo</u></th>>
+    
+    <th><u>Select</u></th>
+    <th><u>Edit</u></th>
+    <th><u>Delete</u></th>
+  </tr>
+{% for res in result %}
+  <tr>
+    
+    
+    <td>{{res.name}}</td>
+    <td>{{res.brand}}</td>
+    <td>{{res.style}}</td>
+    <td>{{res.liquid}}</td>
+    <td><img src="{{res.photo.url}}" height="100" width="100"></td>
+    
+    <td><a href="/select/{{res.id}}">select</a></td>
+    <td><a href="/edit/{{res.id}}">edit</a></td>
+    <td><a href="/delete/{{res.id}}">delete</a></td>
+  </tr>
+
+{% endfor %}
+ 
+ </table>
+</body>
+</html>
+
+
+</table>
+
+
+
+</body>
+</html>
